@@ -6,7 +6,7 @@
     <title>Guess the Emoji</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="main.js"></script>
+    
 </head>
 <body>
     <h1>Can You Guess the Emoji?</h1>
@@ -18,23 +18,34 @@
 
     <section class="emojis">
         <div class="emoji">🕵🏻‍♀️</div>
-        <div class="emoji"></div>
-        <div class="emoji"></div>
-        <div class="emoji"></div>
-        <div class="emoji"></div>
-        <div class="emoji"></div>
-        <div class="emoji"></div>
-        <div class="emoji"></div>
-        <div class="emoji"></div>
-        <div class="emoji"></div>
-        <div class="emoji"></div>
-        <div class="emoji"></div>
+        <div class="emoji">👨🏿‍🚀</div>
+        <div class="emoji">👩🏻‍🎤</div>
+        <div class="emoji">👨🏼‍🎨</div>
+        <div class="emoji">👩🏼‍⚖️</div>
+        <div class="emoji">🧛🏻‍♂️</div>
+        <div class="emoji">👨🏻‍🚒</div>
+        <div class="emoji">👩🏾‍🔬</div>
+        <div class="emoji">👮🏿‍♂️</div>
+        <div class="emoji">👩🏻‍🌾</div>
+        <div class="emoji">🧕🏽</div>
+        <div class="emoji">👨🏼‍🏫</div>
     </section>
 
-    <section class="questions"></section>
+    <select name="Questions" id="questions">
+        <option value="question">questions</option>
+        <option value="gender">What gender are you?</option>
+        <option value="hair-color">What is your hair color?</option>
+        <option value="skin-color">What is your skin color?</option>
+        <option value="holding">Are you holding something?</option>
+        <option value="head-cover">Are you wearing something on your head?</option>
+        <option value="mustache">Do you have a mustache?</option>
+        <option value="eye-cover">Are you wearing something over your eyes?</option>
+        <option value="collar">Does your shirt have a collar?</option>
+    </select>
+    <button class="ask-button">Ask</button>
 
-    <button class="guess">Make a Guess</button>
+    <button class="guess-button">Make a Guess</button>
    
-
+    <script src="main.js"></script>
 </body>
 </html>
