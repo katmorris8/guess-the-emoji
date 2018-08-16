@@ -19,3 +19,7 @@ body {
 button, select {
     cursor: pointer;
 }
+
+.modal-box {
+    display: none;
+}
