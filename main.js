@@ -16,15 +16,10 @@ const emojiElement = document.querySelectorAll('.emoji');
 const femaleDetectiveElement = emojiElement[0].getAttribute('id');
 let selectedEmoji; // selected emoji index
 const questions = document.getElementById('questions');
-const value = questions.value;
-
-// ! add event listener to get the options
-// ! when the option is clicked, get the index number for the nodelist
-// ! get the value of the option at that index number
-
-// ! event listener for when ask button is click
-// ! check which question was selected when the ask button was clicked
-// ! compare the question value to the selected object's key
+// const value = questions.value;
+const modalBox = document.querySelector('.modal-box');
+let answerMessage = document.querySelector('.answer-message');
+const modalBoxButton = document.querySelector('.continue-button');
 
 // ! evaluate the answer of the question
 // display the answer in a prompt (later modal box)
@@ -44,43 +39,52 @@ function chooseEmoji() {
 }
 
 function getQuestion() {
+    const value = questions.value;
+    modalBox.style.display = 'block';
+    
     if (value === 'gender') {
-        alert(`I am ${emojis[selectedEmoji][value]}.`);
+        answerMessage.innerHTML = `I am ${emojis[selectedEmoji][value]}.`;
     } else if (value === 'hairColor') {
-        alert(`I have ${emojis[selectedEmoji][value]} hair.`);
+        answerMessage.innerHTML = `I have ${emojis[selectedEmoji][value]} hair.`;
     } else if (value === 'skinColor') {
-        alert(`I have ${emojis[selectedEmoji][value]} skin.`);
+        answerMessage.innerHTML = `I have ${emojis[selectedEmoji][value]} skin.`;
     } else if (value === 'holding') {
         if (emojis[selectedEmoji].holding === true) {
-            alert(`Yes, I am holding something.`);
+            answerMessage.innerHTML = `Yes, I am holding something.`;
         } else {
-            alert(`No, I am holding something.`);
+            answerMessage.innerHTML = `No, I am holding something.`;
         }
     } else if (value === 'headCover') {
         if (emojis[selectedEmoji].headCover === true) {
-            alert(`Yes, I do have something on my head.`);
+            answerMessage.innerHTML = `Yes, I do have something on my head.`;
         } else {
-            alert(`No, I don't have something on my head.`);
+            answerMessage.innerHTML = `No, I don't have something on my head.`;
         }
     } else if (value === 'mustache') {
         if (emojis[selectedEmoji].mustache === true) {
-            alert(`Yes, I do have a mustache.`);
+            answerMessage.innerHTML = `Yes, I do have a mustache.`;
         } else {
-            alert(`No, I don't have a mustache.`);
+            answerMessage.innerHTML = `No, I don't have a mustache.`;
         }
     } else if (value === 'eyeCover') {
         if (emojis[selectedEmoji].eyeCover === true) {
-            alert(`Yes, I do have something over my eyes.`);
+            answerMessage.innerHTML = `Yes, I do have something over my eyes.`;
         } else {
-            alert(`No, I don't have something over my eyes.`);
+            answerMessage.innerHTML = `No, I don't have something over my eyes.`;
         }
     } else if (value === 'collar') {
         if (emojis[selectedEmoji].collar === true) {
-            alert(`Yes, I am wearing a collar.`);
+            answerMessage.innerHTML = `Yes, I am wearing a collar.`;
         } else {
-            alert(`No, I am not wearing a collar.`);
+            answerMessage.innerHTML = `No, I am not wearing a collar.`;
         }
     }
+    modalBoxButton.addEventListener('click', nextQuestion);
+
+}
+
+function nextQuestion() {
+    modalBox.style.display = 'none';
 }
 
 chooseEmoji();
