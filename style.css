@@ -1,13 +1,16 @@
 body {
-    width: 75vw;
+    width: 75%;
     margin: 0 auto;
 }
 
+.emoji-board {
+    position: relative;
+    width: 70%;
+}
 .emojis {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 70%;
 }
 
 .emoji {
@@ -22,4 +25,19 @@ button, select {
 
 .modal-box {
     display: none;
+    background: aliceblue;
+    border: 1px gray solid;
+    width: 50%;
+    position: absolute;
+    text-align: center;
+    height: auto;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 20px;
+}
+
+.continue-button {
+    padding: 10px;
 }

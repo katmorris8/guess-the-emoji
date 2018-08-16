@@ -12,33 +12,41 @@
 <body>
     <h1>Can You Guess the Emoji?</h1>
 
-    <main class="emojis">
-        <button id="0" class="emoji">🕵🏻‍♀️</button>
-        <button id="1" class="emoji">👨🏿‍🚀</button>
-        <button id="2" class="emoji">👩🏻‍🎤</button>
-        <button id="3" class="emoji">👨🏼‍🎨</button>
-        <button id="4" class="emoji">👩🏼‍⚖️</button>
-        <button id="5" class="emoji">🧛🏻‍♂️</button>
-        <button id="6" class="emoji">👨🏻‍🚒</button>
-        <button id="7" class="emoji">👩🏾‍🔬</button>
-        <button id="8" class="emoji">👮🏿‍♂️</button>
-        <button id="9" class="emoji">👩🏻‍🌾</button>
-        <button id="10" class="emoji">🧕🏽</button>
-        <button id="11" class="emoji">👨🏼‍🏫</button>
+    <main class="emoji-board">
+        <div class="emojis">
+            <button id="0" class="emoji">🕵🏻‍♀️</button>
+            <button id="1" class="emoji">👨🏿‍🚀</button>
+            <button id="2" class="emoji">👩🏻‍🎤</button>
+            <button id="3" class="emoji">👨🏼‍🎨</button>
+            <button id="4" class="emoji">👩🏼‍⚖️</button>
+            <button id="5" class="emoji">🧛🏻‍♂️</button>
+            <button id="6" class="emoji">👨🏻‍🚒</button>
+            <button id="7" class="emoji">👩🏾‍🔬</button>
+            <button id="8" class="emoji">👮🏿‍♂️</button>
+            <button id="9" class="emoji">👩🏻‍🌾</button>
+            <button id="10" class="emoji">🧕🏽</button>
+            <button id="11" class="emoji">👨🏼‍🏫</button>
+        </div>
+        <div class="modal-box">
+            <div class="modal">
+                <h3 class="answer-message"></h3>
+                <button class="continue-button">Continue</button>
+            </div>
+        </div>
     </main>
 
     <aside>
-        <section>
+        <div>
             <h2>Guess who I am.</h2>
             <div class="emoji">
                 <span>👤</span>
                 <span>?</span>
             </div>
-        </section>
-        <section class="scoreboard">
+        </div>
+        <div class="scoreboard">
             <h2>Score:</h2>
             <p>0</p>
-        </section>
+        </div>
     </aside>
 
     <select name="Questions" id="questions">
@@ -52,16 +60,10 @@
         <option class="question" value="eyeCover">Are you wearing something over your eyes?</option>
         <option class="question" value="collar">Does your shirt have a collar?</option>
     </select>
+
     <button class="ask-button">Ask</button>
 
     <button class="guess-button">Make a Guess</button>
-
-    <div class="modal-box">
-        <div class="modal">
-            <h3 class="answer-message"></h3>
-            <button class="continue">Continue</button>
-        </div>
-    </div>
 
     <script src="main.js"></script>
 </body>
