@@ -13,18 +13,18 @@
     <h1>Can You Guess the Emoji?</h1>
 
     <main class="emojis">
-        <button id="f-detective" class="emoji">🕵🏻‍♀️</button>
-        <button id="m-astronaut" class="emoji">👨🏿‍🚀</button>
-        <button id="f-rockstar" class="emoji">👩🏻‍🎤</button>
-        <button id="m-artist" class="emoji">👨🏼‍🎨</button>
-        <button id="f-judge" class="emoji">👩🏼‍⚖️</button>
-        <button id="m-vampire" class="emoji">🧛🏻‍♂️</button>
-        <button id="m-firefighter" class="emoji">👨🏻‍🚒</button>
-        <button id="f-scientist" class="emoji">👩🏾‍🔬</button>
-        <button id="m-cop" class="emoji">👮🏿‍♂️</button>
-        <button id="f-farmer" class="emoji">👩🏻‍🌾</button>
-        <button id="f-muslim" class="emoji">🧕🏽</button>
-        <button id="m-teacher" class="emoji">👨🏼‍🏫</button>
+        <button id="0" class="emoji">🕵🏻‍♀️</button>
+        <button id="1" class="emoji">👨🏿‍🚀</button>
+        <button id="2" class="emoji">👩🏻‍🎤</button>
+        <button id="3" class="emoji">👨🏼‍🎨</button>
+        <button id="4" class="emoji">👩🏼‍⚖️</button>
+        <button id="5" class="emoji">🧛🏻‍♂️</button>
+        <button id="6" class="emoji">👨🏻‍🚒</button>
+        <button id="7" class="emoji">👩🏾‍🔬</button>
+        <button id="8" class="emoji">👮🏿‍♂️</button>
+        <button id="9" class="emoji">👩🏻‍🌾</button>
+        <button id="10" class="emoji">🧕🏽</button>
+        <button id="11" class="emoji">👨🏼‍🏫</button>
     </main>
 
     <aside>
@@ -42,19 +42,26 @@
     </aside>
 
     <select name="Questions" id="questions">
-        <option value="question">questions</option>
-        <option value="gender">What gender are you?</option>
-        <option value="hair-color">What is your hair color?</option>
-        <option value="skin-color">What is your skin color?</option>
-        <option value="holding">Are you holding something?</option>
-        <option value="head-cover">Are you wearing something on your head?</option>
-        <option value="mustache">Do you have a mustache?</option>
-        <option value="eye-cover">Are you wearing something over your eyes?</option>
-        <option value="collar">Does your shirt have a collar?</option>
+        <option class="question" value="question">questions</option>
+        <option class="question" value="gender">What gender are you?</option>
+        <option class="question" value="hairColor">What is your hair color?</option>
+        <option class="question" value="skinColor">What is your skin color?</option>
+        <option class="question" value="holding">Are you holding something?</option>
+        <option class="question" value="headCover">Are you wearing something on your head?</option>
+        <option class="question" value="mustache">Do you have a mustache?</option>
+        <option class="question" value="eyeCover">Are you wearing something over your eyes?</option>
+        <option class="question" value="collar">Does your shirt have a collar?</option>
     </select>
     <button class="ask-button">Ask</button>
 
     <button class="guess-button">Make a Guess</button>
+
+    <div class="modal-box">
+        <div class="modal">
+            <h3 class="answer-message"></h3>
+            <button class="continue">Continue</button>
+        </div>
+    </div>
 
     <script src="main.js"></script>
 </body>
