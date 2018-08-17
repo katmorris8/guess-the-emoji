@@ -10,24 +10,48 @@ const emojis = {
         eyeCover: false,
         collar: true,
     },
-
+    maleAstronaut: {
+        gender: 'male',
+        hairColor: 'dark',
+        skinColor: 'dark',
+        holding: false,
+        headCover: true,
+        mustache: true,
+        eyeCover: true,
+        collar: false,
+    },
+    femaleRockstar: {
+        gender: 'female',
+        hairColor: 'light',
+        skinColor: 'light',
+        holding: true,
+        headCover: false,
+        mustache: false,
+        eyeCover: true,
+        collar: true,
+    },
 };
-const emojiElement = document.querySelectorAll('.emoji');
-const femaleDetectiveElement = emojiElement[0].getAttribute('id');
+const emojiElement = document.querySelector('.emoji');
+// const femaleDetectiveElement = emojiElement[0].getAttribute('id');
 let selectedEmoji; // selected emoji index
 const questions = document.getElementById('questions');
+//document.querySelectorAll('option'); = Array of Option elements with questions
 // const value = questions.value;
 const modalBox = document.querySelector('.modal-box');
 let answerMessage = document.querySelector('.answer-message');
 const modalBoxButton = document.querySelector('.continue-button');
 
-// ! evaluate the answer of the question
 // display the answer in a prompt (later modal box)
 // make this happen for every question
 // remove that question from the option list
 
-// prompt an answer using a modal box w answer
+// after closing modal box, eliminate emojis that don't match that description
+// when the emoji is clicked, 
+// add class to apply red overlay
 
+// click make a guess button or after 4 questions,
+// player has to click emoji
+// on click event, see if the clicked emoji matches the selected emoji
 
 // click event for a start button that runs chooseEmoji()
 function chooseEmoji() {
@@ -80,11 +104,16 @@ function getQuestion() {
         }
     }
     modalBoxButton.addEventListener('click', nextQuestion);
-
 }
 
 function nextQuestion() {
+    console.log("next");
     modalBox.style.display = 'none';
+    emojiElement.addEventListener('click', eliminateEmojis);
+}
+
+function eliminateEmojis() {
+    // emojiElement.classList.add('eliminate');
 }
 
 chooseEmoji();
@@ -94,5 +123,3 @@ console.log(emojis.femaleDetective); // properties and values
 console.log(selectedEmoji);
 console.log(emojis[selectedEmoji]); //properties and values of selected emoji
 console.log(emojis[selectedEmoji].holding);
-
-

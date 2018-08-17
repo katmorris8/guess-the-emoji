@@ -41,3 +41,8 @@ button, select {
 .continue-button {
     padding: 10px;
 }
+
+.eliminate {
+    background-color: gray;
+    opacity: .7;
+}
