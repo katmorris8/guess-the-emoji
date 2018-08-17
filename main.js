@@ -1,4 +1,3 @@
-let emoji = [];
 const emojis = {
     femaleDetective: {
         gender: 'female',
@@ -31,8 +30,10 @@ const emojis = {
         collar: true,
     },
 };
-const emojiElement = document.querySelector('.emoji');
-// const femaleDetectiveElement = emojiElement[0].getAttribute('id');
+
+const emojiElement = document.querySelectorAll('.emoji');
+const emojisElement = document.querySelector('.emojis');
+let selectedEmojiElement;
 let selectedEmoji; // selected emoji index
 const questions = document.getElementById('questions');
 //document.querySelectorAll('option'); = Array of Option elements with questions
@@ -40,6 +41,7 @@ const questions = document.getElementById('questions');
 const modalBox = document.querySelector('.modal-box');
 let answerMessage = document.querySelector('.answer-message');
 const modalBoxButton = document.querySelector('.continue-button');
+emojisElement.addEventListener('click', handleEmojiClick);
 
 // display the answer in a prompt (later modal box)
 // make this happen for every question
@@ -57,7 +59,13 @@ const modalBoxButton = document.querySelector('.continue-button');
 function chooseEmoji() {
     const randomEmoji = Math.floor(Math.random() * Object.keys(emojis).length);
     selectedEmoji = Object.keys(emojis)[randomEmoji];
-    emoji.push(emojis[selectedEmoji]);
+    console.log(randomEmoji);
+    
+    selectedEmojiElement = emojiElement[randomEmoji].getAttribute('id');
+    if (parseInt(selectedEmojiElement) === randomEmoji) {
+        emojiElement[randomEmoji].classList.add('selected');
+    }
+
     const askButton = document.querySelector('.ask-button');
     askButton.addEventListener('click', getQuestion);
 }
@@ -103,17 +111,33 @@ function getQuestion() {
             answerMessage.innerHTML = `No, I am not wearing a collar.`;
         }
     }
-    modalBoxButton.addEventListener('click', nextQuestion);
+    modalBoxButton.addEventListener('click', closeModalBox);
 }
 
-function nextQuestion() {
-    console.log("next");
+function closeModalBox() {
     modalBox.style.display = 'none';
-    emojiElement.addEventListener('click', eliminateEmojis);
 }
 
-function eliminateEmojis() {
+// emojis left function?
+// emoji elements that don't have an .eliminated class and who's 
+function handleEmojiClick() {
+    // emojiElement.classList.contains('eliminate);
     // emojiElement.classList.add('eliminate');
+
+    // check if class has target emoji
+    // if not, return
+    // ! check does the element have the class eliminated
+    // ! return
+    // check if it's the right answer
+    // if it is the right answer, display winning message
+    // if not, add the eliminated class
+    
+    
+    if (event.target.classList.contains('eliminate')) {
+        return console.log('has eliminate class');
+    }
+
+    
 }
 
 chooseEmoji();
