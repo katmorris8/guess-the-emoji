@@ -173,7 +173,6 @@ function chooseEmoji() {
     }
     selectedEmojiElementId = Number(selectedEmojiElementIndex);
     selectedEmojiElement = document.getElementById(selectedEmojiElementId);
-    
 }
 
 function getQuestion() {
