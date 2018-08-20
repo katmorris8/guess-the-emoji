@@ -153,6 +153,7 @@ button, select {
     color: #02394A;
     background-color: #F26DF9;
     box-shadow: 0 8px 16px 0 #000000;
+    transition: .5s ease-in .25s;
 }
 
 .start-button {
