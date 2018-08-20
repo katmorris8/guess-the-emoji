@@ -225,7 +225,7 @@ function closeModalBox() {
     modalBox.style.display = 'none';
 }
 
-function handleEmojiClick(event) { 
+function handleEmojiClick(event) {
     event.target.classList.remove('not-eliminated');
     event.target.classList.add('eliminate');
     event.target.removeEventListener('click', handleEmojiClick);
