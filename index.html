@@ -17,7 +17,9 @@
     <h1>Can You Guess the Emoji?</h1>
 
     <div class="start-screen">
-        <p>An emoji to guess will be selected. You will ask questions about the emoji. As your questions are answered, click on emojis to eliminate them. If you think you know the emoji, click the "Make a Guess" button and select the emoji. Do you think you can guess the right emoji?</p>
+        <p>An emoji to guess will be selected. You will ask questions about the emoji. As your questions are answered, click
+            on emojis to eliminate them. If you think you know the emoji, click the "Make a Guess" button and select the
+            emoji. Do you think you can guess the right emoji?</p>
         <div class="emoji-ticker">
             <span>🕵🏻‍♀️</span>
             <span>👨🏿‍🚀</span>
@@ -32,7 +34,7 @@
             <span>🧕🏽</span>
             <span>👨🏼‍🏫</span>
         </div>
-        <button class="start-button">Start Game</button>
+        <button class="start-button buttons">Start Game</button>
     </div>
 
     <div class="game-screen">
@@ -55,15 +57,15 @@
                 <div class="modal-box">
                     <div class="modal">
                         <h3>Answer:</h3>
-                        <p class="answer-message"></p>
-                        <button class="continue-button">Continue</button>
+                        <p class="answer"></p>
+                        <button class="continue-button buttons">Continue</button>
                     </div>
                 </div>
             </main>
 
             <aside class="game-info">
                 <div>
-                    <button class="restart-button">
+                    <button class="restart-button buttons">
                         <i class="fas fa-reply"></i>
                     </button>
                 </div>
@@ -93,8 +95,24 @@
                 <option class="question" value="eyeCover">Do you have something over your eyes?</option>
                 <option class="question" value="collar">Does your shirt have a collar?</option>
             </select>
-            <button class="ask-button">Ask</button>
-            <button class="guess-button">Make a Guess</button>
+            <button class="ask-button buttons">Ask</button>
+            <button class="guess-button buttons">Make a Guess</button>
+        </div>
+    </div>
+
+    <div class="win-box">
+        <div class="win">
+            <h4 class="win-emoji"></h4>
+            <p class="win message">You're a <span>🌟</span> !</p>
+            <button class="restart-button buttons">Play Again!</button>
+        </div>
+    </div>
+
+    <div class="lose-box">
+        <div class="lose">
+            <h4 class="lose-emoji"></h4>
+            <p class="lose message">You're <span>💩</span> !</p>
+            <button class="restart-button buttons">Try Again!</button>
         </div>
     </div>
 

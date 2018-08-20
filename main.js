@@ -134,17 +134,25 @@ let selectedEmojiElement;
 let selectedEmojiElementId;
 let notEliminatedEmoji;
 let eliminatedEmojis;
+let winMessageEmoji = document.querySelector('.win-emoji');
+let loseMessageEmoji = document.querySelector('.lose-emoji');
 const questions = document.getElementById('questions');
+const askButton = document.querySelector('.ask-button');
+askButton.addEventListener('click', getQuestion);
 let score = document.querySelector('.score');
 let scoreText = 10000;
 const modalBox = document.querySelector('.modal-box');
-let answerMessage = document.querySelector('.answer-message');
+let answerMessage = document.querySelector('.answer');
 const modalBoxButton = document.querySelector('.continue-button');
+const winBox = document.querySelector('.win-box');
+const loseBox = document.querySelector('.lose-box');
 
 guessButton.addEventListener('click', makeEarlyGuess);
-const restartButton = document.querySelector('.restart-button');
-restartButton.addEventListener('click', restart);
+const restartButton = document.querySelectorAll('.restart-button');
 
+for (let j = 0; j < restartButton.length; j++) {
+    restartButton[j].addEventListener('click', restart);
+}
 
 for (let i = 0; i < emojiElements.length; i++) {
     emojiElements[i].addEventListener('click', handleEmojiClick);
@@ -163,16 +171,13 @@ function chooseEmoji() {
     if (Number(selectedEmojiElementIndex) === randomEmoji) {
         emojiElements[randomEmoji].classList.add('selected');
     }
-
-    const askButton = document.querySelector('.ask-button');
-    askButton.addEventListener('click', getQuestion);
-
-
     selectedEmojiElementId = Number(selectedEmojiElementIndex);
     selectedEmojiElement = document.getElementById(selectedEmojiElementId);
+    
 }
 
 function getQuestion() {
+    window.scrollTo(0, 0);
     score.innerHTML = scoreText -= 1000;
     const value = questions.value;
     modalBox.style.display = 'block';
@@ -258,15 +263,18 @@ function earlyGuess(event) {
 }
 
 function winningMessage() {
-    alert('you won!');
+    winBox.style.display = 'block';
+    winMessageEmoji.innerHTML = selectedEmojiElement.innerHTML;
 }
 
 function losingMessage() {
-    alert('you lost!');
+    loseBox.style.display = 'block';
+    loseMessageEmoji.innerHTML = selectedEmojiElement.innerHTML;
 }
 
 function restart() {
     window.location.reload();
+    window.scrollTo(0, 0);
 }
 
 chooseEmoji();

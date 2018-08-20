@@ -13,12 +13,17 @@ body {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 54px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     color: #F26DF9;
     text-shadow: 2px 2px 5px #000000;
+}
+
+h4 {
+    font-size: 100px;
+    margin: 0;
 }
 
 .start-screen {
@@ -33,23 +38,10 @@ h1 {
 }
 
 .emoji-ticker {
-    font-size: 45px;
+    font-size: 50px;
     padding: 40px;
     overflow: hidden;
     animation: emoji-ticker 4s linear alternate;
-}
-
-.start-button {
-    font-size: 40px;
-    padding: 15px 30px;
-    margin: 10px 5px;
-    color: #02394A;
-    background-color: #F26DF9;
-    box-shadow: 0 8px 16px 0 #000000;
-}
-
-.start-button:hover {
-    background-color: #EB4B98;
 }
 
 .game-screen {
@@ -99,7 +91,7 @@ button, select {
     font-size: 24px;
 }
 
-.modal-box {
+.modal-box, .win-box, .lose-box {
     display: none;
     background-color: #043565;
     border: 3px #F26DF9 solid;
@@ -122,18 +114,6 @@ button, select {
     opacity: .3;
 }
 
-.restart-button {
-    padding: 5px 15px;
-    margin: 10px 5px;
-    color: #02394A;
-    background-color: #F26DF9;
-    box-shadow: 0 8px 16px 0 #02394A;
-}
-
-.restart-button:hover {
-    background-color: #EB4B98;
-}
-
 .guess-emoji {
     text-shadow: 1px 1px 2px #02394A;
 }
@@ -153,7 +133,7 @@ button, select {
     text-align: center;
 }
 
-.ask-button, .guess-button, select {
+.buttons, select {
     padding: 5px 15px;
     margin: 10px 5px;
     color: #02394A;
@@ -161,20 +141,20 @@ button, select {
     box-shadow: 0 8px 16px 0 #000000;
 }
 
-.ask-button:hover {
+.start-button {
+    font-size: 40px;
+    padding: 15px 30px;
+    margin: 10px 5px;
+}
+
+.buttons:hover {
     background-color: #EB4B98;
 }
 
-.guess-button:hover {
-    background-color: #EB4B98;
-}
-
-select:hover {
-    background-color: #EB4B98;
-}
-
-.continue-button:hover {
-    background-color: #EB4B98;
+.message {
+    font-size: 60px;
+    text-shadow: 3px 3px 6px #02394A;
+    margin: 0;
 }
 
 @keyframes color-change {
