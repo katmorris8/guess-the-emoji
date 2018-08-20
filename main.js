@@ -123,26 +123,18 @@ const emojis = {
 
 const emojiElements = document.querySelectorAll('.emoji');
 const emojisElement = document.querySelector('.emojis');
-
-let selectedEmojiElementIndex; // selected emoji index
-let selectedEmoji; // selected emoji object name
-// let selectedEmojiElementId = Number(selectedEmojiElementIndex);
-// let selectedEmojiElement = document.getElementById(selectedEmojiElementId);
-// let selectedEmojiElementId = Number(selectedEmojiElementIndex);
+let selectedEmojiElementIndex;
+let selectedEmoji;
 let selectedEmojiElement;
 let selectedEmojiElementId;
 let notEliminatedEmoji;
-// let selectedEmojiElement = document.getElementById('selectedEmojiElementId');
-// let eliminatedEmojis = document.querySelectorAll('.eliminate');
+let eliminatedEmojis;
 const questions = document.getElementById('questions');
-//document.querySelectorAll('option'); = Array of Option elements with questions
-// const value = questions.value;
 let score = document.querySelector('.score');
 let scoreText = 10000;
 const modalBox = document.querySelector('.modal-box');
 let answerMessage = document.querySelector('.answer-message');
 const modalBoxButton = document.querySelector('.continue-button');
-// emojisElement.addEventListener('click', handleEmojiClick);
 let guessButton = document.querySelector('.guess-button');
 guessButton.addEventListener('click', makeEarlyGuess);
 
@@ -150,26 +142,10 @@ guessButton.addEventListener('click', makeEarlyGuess);
 for (let i = 0; i < emojiElements.length; i++) {
     emojiElements[i].addEventListener('click', handleEmojiClick);
 }
-console.log(emojiElements.length);
 
-// display the answer in a prompt (later modal box)
-// make this happen for every question
-// remove that question from the option list
-
-// after closing modal box, eliminate emojis that don't match that description
-// when the emoji is clicked, 
-// add class to apply red overlay
-
-// click make a guess button or after 4 questions,
-// player has to click emoji
-// on click event, see if the clicked emoji matches the selected emoji
-
-// click event for a start button that runs chooseEmoji()
 function chooseEmoji() {
     const randomEmoji = Math.floor(Math.random() * Object.keys(emojis).length);
     selectedEmoji = Object.keys(emojis)[randomEmoji];
-    console.log(randomEmoji);
-
 
     selectedEmojiElementIndex = emojiElements[randomEmoji].getAttribute('id');
     if (Number(selectedEmojiElementIndex) === randomEmoji) {
@@ -182,7 +158,6 @@ function chooseEmoji() {
 
     selectedEmojiElementId = Number(selectedEmojiElementIndex);
     selectedEmojiElement = document.getElementById(selectedEmojiElementId);
-    console.log(selectedEmojiElement);
 }
 
 function getQuestion() {
@@ -234,39 +209,23 @@ function closeModalBox() {
     modalBox.style.display = 'none';
 }
 
-// emojis left function?
-// emoji elements that don't have an .eliminated class and who's 
-// click to add eliminate class to an emoji
-// 
-function handleEmojiClick(event) {
-    event.target.classList.add('eliminate');
-    notEliminatedEmoji = document.querySelector('.not-eliminated');
+function handleEmojiClick(event) { 
     event.target.classList.remove('not-eliminated');
-    console.log(event.target.id);
-    console.log(notEliminatedEmoji);
-    
-
-
+    event.target.classList.add('eliminate');
     event.target.removeEventListener('click', handleEmojiClick);
-    let eliminatedEmojis = document.querySelectorAll('.eliminate');
+    eliminatedEmojis = document.querySelectorAll('.eliminate');
+    notEliminatedEmoji = document.querySelector('.not-eliminated');
 
     if (eliminatedEmojis.length === emojiElements.length - 1) {
         if (notEliminatedEmoji && notEliminatedEmoji.classList.contains('selected')) {
             setTimeout(() => {
-                winningMessage();
+                return winningMessage();
             }, 500);
-            
         } else {
             setTimeout(() => {
-                losingMessage();
+                return losingMessage();
             }, 500);
-            
         }
-
-    }
-
-    if (event.target.classList.contains('selected')) {
-        console.log('selected!');
     }
 }
 
@@ -277,14 +236,12 @@ function makeEarlyGuess() {
 function earlyGuess(event) {
     if (event.target.classList.contains('selected')) {
         setTimeout(() => {
-            winningMessage();
+            return winningMessage();
         }, 500);
-        
     } else {
         setTimeout(() => {
-            losingMessage();
+            return losingMessage();
         }, 500);
-        
     }
 }
 
@@ -296,11 +253,4 @@ function losingMessage() {
     alert('you lost!');
 }
 
-
 chooseEmoji();
-
-
-console.log(emojis.femaleDetective); // properties and values
-console.log(selectedEmoji);
-console.log(emojis[selectedEmoji]); //properties and values of selected emoji
-console.log(emojis[selectedEmoji].holding);
