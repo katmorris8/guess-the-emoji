@@ -7,8 +7,8 @@
     <title>Guess the Emoji</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Montserrat:400,900" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" media="screen" href="normalize.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 </head>
 
 <body>
@@ -17,18 +17,18 @@
     <div class="gameboard">
         <main class="emoji-board">
             <div class="emojis">
-                <button id="0" class="emoji">🕵🏻‍♀️</button>
-                <button id="1" class="emoji">👨🏿‍🚀</button>
-                <button id="2" class="emoji">👩🏻‍🎤</button>
-                <button id="3" class="emoji">👨🏼‍🎨</button>
-                <button id="4" class="emoji">👩🏼‍⚖️</button>
-                <button id="5" class="emoji">🧛🏻‍♂️</button>
-                <button id="6" class="emoji">👨🏻‍🚒</button>
-                <button id="7" class="emoji">👩🏾‍🔬</button>
-                <button id="8" class="emoji">👮🏿‍♂️</button>
-                <button id="9" class="emoji">👩🏻‍🌾</button>
-                <button id="10" class="emoji">🧕🏽</button>
-                <button id="11" class="emoji">👨🏼‍🏫</button>
+                <button id="0" class="emoji not-eliminated">🕵🏻‍♀️</button>
+                <button id="1" class="emoji not-eliminated">👨🏿‍🚀</button>
+                <button id="2" class="emoji not-eliminated">👩🏻‍🎤</button>
+                <button id="3" class="emoji not-eliminated">👨🏼‍🎨</button>
+                <button id="4" class="emoji not-eliminated">👩🏼‍⚖️</button>
+                <button id="5" class="emoji not-eliminated">🧛🏻‍♂️</button>
+                <button id="6" class="emoji not-eliminated">👨🏻‍🚒</button>
+                <button id="7" class="emoji not-eliminated">👩🏾‍🔬</button>
+                <button id="8" class="emoji not-eliminated">👮🏿‍♂️</button>
+                <button id="9" class="emoji not-eliminated">👩🏼‍🌾</button>
+                <button id="10" class="emoji not-eliminated">🧕🏽</button>
+                <button id="11" class="emoji not-eliminated">👨🏼‍🏫</button>
             </div>
             <div class="modal-box">
                 <div class="modal">
@@ -46,29 +46,27 @@
             </div>
             <div class="scoreboard">
                 <h2>Score:</h2>
-                <p>10000</p>
+                <p class="score">10000</p>
             </div>
         </aside>
     </div>
 
     <div class="ask-section">
         <select name="Questions" id="questions">
-            <option class="question" value="question">questions</option>
+            <option class="question" value="question">Questions</option>
             <option class="question" value="gender">What gender are you?</option>
             <option class="question" value="hairColor">What is your hair color?</option>
             <option class="question" value="skinColor">What is your skin color?</option>
             <option class="question" value="holding">Are you holding something?</option>
             <option class="question" value="headCover">Are you wearing something on your head?</option>
             <option class="question" value="mustache">Do you have a mustache?</option>
-            <option class="question" value="eyeCover">Are you wearing something over your eyes?</option>
+            <option class="question" value="eyeCover">Do you have something over your eyes?</option>
             <option class="question" value="collar">Does your shirt have a collar?</option>
         </select>
-
         <button class="ask-button">Ask</button>
-    
+        <button class="guess-button">Make a Guess</button>
+    </div>
 
-    <button class="guess-button">Make a Guess</button>
-</div>
     <script src="main.js"></script>
 </body>
 
