@@ -120,6 +120,11 @@ const emojis = {
         collar: false,
     },
 };
+const startScreen = document.querySelector('.start-screen');
+const gameScreen = document.querySelector('.game-screen');
+const startButton = document.querySelector('.start-button');
+startButton.addEventListener('click', startGame);
+const guessButton = document.querySelector('.guess-button');
 
 const emojiElements = document.querySelectorAll('.emoji');
 const emojisElement = document.querySelector('.emojis');
@@ -135,7 +140,7 @@ let scoreText = 10000;
 const modalBox = document.querySelector('.modal-box');
 let answerMessage = document.querySelector('.answer-message');
 const modalBoxButton = document.querySelector('.continue-button');
-const guessButton = document.querySelector('.guess-button');
+
 guessButton.addEventListener('click', makeEarlyGuess);
 const restartButton = document.querySelector('.restart-button');
 restartButton.addEventListener('click', restart);
@@ -143,6 +148,11 @@ restartButton.addEventListener('click', restart);
 
 for (let i = 0; i < emojiElements.length; i++) {
     emojiElements[i].addEventListener('click', handleEmojiClick);
+}
+
+function startGame() {
+    startScreen.style.display = 'none';
+    gameScreen.style.display = 'block';
 }
 
 function chooseEmoji() {

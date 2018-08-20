@@ -21,13 +21,48 @@ h1 {
     text-shadow: 2px 2px 5px #000000;
 }
 
+.start-screen {
+    font-size: 28px;
+    text-shadow: 1px 1px 2px #02394A;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #5158BB;
+    box-shadow: 0 8px 16px 0 #000000;
+    animation: color-change 4s linear infinite alternate-reverse;
+}
+
+.emoji-ticker {
+    font-size: 45px;
+    padding: 40px;
+    overflow: hidden;
+    animation: emoji-ticker 4s linear alternate;
+}
+
+.start-button {
+    font-size: 40px;
+    padding: 15px 30px;
+    margin: 10px 5px;
+    color: #02394A;
+    background-color: #F26DF9;
+    box-shadow: 0 8px 16px 0 #000000;
+}
+
+.start-button:hover {
+    background-color: #EB4B98;
+}
+
+.game-screen {
+    display: none;
+}
+
 .gameboard {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0 8px 16px 0 #000000;
     margin: 20px auto;
     background-color: #5158BB;
+    box-shadow: 0 8px 16px 0 #000000;
 }
 
 .emoji-board {
@@ -42,7 +77,7 @@ h1 {
 }
 
 .emoji {
-    font-size: 100px;
+    font-size: 80px;
     width: 20%;
     margin: 2%;
     background-color: transparent;
@@ -141,3 +176,22 @@ select:hover {
 .continue-button:hover {
     background-color: #EB4B98;
 }
+
+@keyframes color-change {
+    0% {
+      background-color: #5158BB;
+    }
+    
+    100% {
+      background-color: #043565;
+    }
+  }
+
+  /* @keyframes emoji-ticker {
+    0%   { 
+    transform: translateX(50%); 		
+    }
+    100% { 
+    transform: translateX(-50%); 
+    }
+   } */
