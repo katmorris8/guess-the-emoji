@@ -135,8 +135,10 @@ let scoreText = 10000;
 const modalBox = document.querySelector('.modal-box');
 let answerMessage = document.querySelector('.answer-message');
 const modalBoxButton = document.querySelector('.continue-button');
-let guessButton = document.querySelector('.guess-button');
+const guessButton = document.querySelector('.guess-button');
 guessButton.addEventListener('click', makeEarlyGuess);
+const restartButton = document.querySelector('.restart-button');
+restartButton.addEventListener('click', restart);
 
 
 for (let i = 0; i < emojiElements.length; i++) {
@@ -251,6 +253,10 @@ function winningMessage() {
 
 function losingMessage() {
     alert('you lost!');
+}
+
+function restart() {
+    window.location.reload();
 }
 
 chooseEmoji();

@@ -87,6 +87,18 @@ button, select {
     opacity: .3;
 }
 
+.restart-button {
+    padding: 5px 15px;
+    margin: 10px 5px;
+    color: #02394A;
+    background-color: #F26DF9;
+    box-shadow: 0 8px 16px 0 #02394A;
+}
+
+.restart-button:hover {
+    background-color: #EB4B98;
+}
+
 .guess-emoji {
     text-shadow: 1px 1px 2px #02394A;
 }
@@ -98,7 +110,7 @@ button, select {
 
 
 .scoreboard {
-    margin-top: 60px;
+    margin-top: 24px;
     text-shadow: 1px 1px 2px #02394A;
 }
 
