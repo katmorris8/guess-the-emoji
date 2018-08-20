@@ -30,6 +30,11 @@ h4 {
     margin: 0;
 }
 
+span:hover {
+    animation: .25s move-up linear;
+
+}
+
 .start-screen {
     font-size: 28px;
     text-shadow: 1px 1px 2px #02394A;
@@ -76,7 +81,7 @@ h4 {
 .emoji {
     font-size: 80px;
     width: 20%;
-    margin: 2%;
+    margin: 5px;
     background-color: transparent;
     border: none;
 }
@@ -180,6 +185,17 @@ button, select {
     100% {
       background-color: #043565;
     }
+  }
+
+  @keyframes move-up {
+      0% {
+          position: relative;
+          bottom: 0;
+      }
+      100% {
+        position: relative;
+        bottom: 30px;
+      }
   }
 
    /* ----------------------------------------------
@@ -335,3 +351,22 @@ button, select {
     }
   }
   
+  @media screen and (max-width: 1024px) and (min-width: 800px) {
+      h1 {
+          font-size: 48px;
+      }
+
+      .emoji-ticker {
+          font-size: 32px;
+      }
+  }
+
+  @media screen and (max-width: 799px) and (min-width: 500px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .emoji-ticker {
+        font-size: 32px;
+    }
+}
