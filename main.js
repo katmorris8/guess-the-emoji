@@ -92,7 +92,7 @@ const emojis = {
     femaleFarmer: {
         gender: 'female',
         hairColor: 'light',
-        skinColor: 'dark',
+        skinColor: 'light',
         holding: true,
         headCover: true,
         mustache: false,
@@ -123,8 +123,16 @@ const emojis = {
 
 const emojiElements = document.querySelectorAll('.emoji');
 const emojisElement = document.querySelector('.emojis');
+
+let selectedEmojiElementIndex; // selected emoji index
+let selectedEmoji; // selected emoji object name
+// let selectedEmojiElementId = Number(selectedEmojiElementIndex);
+// let selectedEmojiElement = document.getElementById(selectedEmojiElementId);
+// let selectedEmojiElementId = Number(selectedEmojiElementIndex);
 let selectedEmojiElement;
-let selectedEmoji; // selected emoji index
+let selectedEmojiElementId;
+let notEliminatedEmoji;
+// let selectedEmojiElement = document.getElementById('selectedEmojiElementId');
 // let eliminatedEmojis = document.querySelectorAll('.eliminate');
 const questions = document.getElementById('questions');
 //document.querySelectorAll('option'); = Array of Option elements with questions
@@ -137,6 +145,7 @@ const modalBoxButton = document.querySelector('.continue-button');
 // emojisElement.addEventListener('click', handleEmojiClick);
 let guessButton = document.querySelector('.guess-button');
 guessButton.addEventListener('click', makeEarlyGuess);
+
 
 for (let i = 0; i < emojiElements.length; i++) {
     emojiElements[i].addEventListener('click', handleEmojiClick);
@@ -160,21 +169,27 @@ function chooseEmoji() {
     const randomEmoji = Math.floor(Math.random() * Object.keys(emojis).length);
     selectedEmoji = Object.keys(emojis)[randomEmoji];
     console.log(randomEmoji);
-    
-    selectedEmojiElement = emojiElements[randomEmoji].getAttribute('id');
-    if (parseInt(selectedEmojiElement) === randomEmoji) {
+
+
+    selectedEmojiElementIndex = emojiElements[randomEmoji].getAttribute('id');
+    if (Number(selectedEmojiElementIndex) === randomEmoji) {
         emojiElements[randomEmoji].classList.add('selected');
     }
 
     const askButton = document.querySelector('.ask-button');
     askButton.addEventListener('click', getQuestion);
+
+
+    selectedEmojiElementId = Number(selectedEmojiElementIndex);
+    selectedEmojiElement = document.getElementById(selectedEmojiElementId);
+    console.log(selectedEmojiElement);
 }
 
 function getQuestion() {
     score.innerHTML = scoreText -= 1000;
     const value = questions.value;
     modalBox.style.display = 'block';
-    
+
     if (value === 'gender') {
         answerMessage.innerHTML = `I am ${emojis[selectedEmoji][value]}.`;
     } else if (value === 'hairColor') {
@@ -185,13 +200,13 @@ function getQuestion() {
         if (emojis[selectedEmoji].holding === true) {
             answerMessage.innerHTML = `Yes, I am holding something.`;
         } else {
-            answerMessage.innerHTML = `No, I am holding something.`;
+            answerMessage.innerHTML = `No, I am not holding anything.`;
         }
     } else if (value === 'headCover') {
         if (emojis[selectedEmoji].headCover === true) {
             answerMessage.innerHTML = `Yes, I do have something on my head.`;
         } else {
-            answerMessage.innerHTML = `No, I don't have something on my head.`;
+            answerMessage.innerHTML = `No, I don't have anything on my head.`;
         }
     } else if (value === 'mustache') {
         if (emojis[selectedEmoji].mustache === true) {
@@ -203,7 +218,7 @@ function getQuestion() {
         if (emojis[selectedEmoji].eyeCover === true) {
             answerMessage.innerHTML = `Yes, I do have something over my eyes.`;
         } else {
-            answerMessage.innerHTML = `No, I don't have something over my eyes.`;
+            answerMessage.innerHTML = `No, I don't have anything over my eyes.`;
         }
     } else if (value === 'collar') {
         if (emojis[selectedEmoji].collar === true) {
@@ -224,52 +239,61 @@ function closeModalBox() {
 // click to add eliminate class to an emoji
 // 
 function handleEmojiClick(event) {
-    // once clicked, remove event listener from that emoji element
-
-    // ! check if class has target emoji
-    // ! if not, return
-    // ! check does the element have the class eliminated
-    // ! return
-    // check if it's the right answer - make a guess
-    // if it is the right answer, display winning message
-    // if not, add the eliminated class
     event.target.classList.add('eliminate');
+    notEliminatedEmoji = document.querySelector('.not-eliminated');
+    event.target.classList.remove('not-eliminated');
     console.log(event.target.id);
-     
+    console.log(notEliminatedEmoji);
+    
+
+
     event.target.removeEventListener('click', handleEmojiClick);
     let eliminatedEmojis = document.querySelectorAll('.eliminate');
-    
+
     if (eliminatedEmojis.length === emojiElements.length - 1) {
-        checkLastEmoji();
+        if (notEliminatedEmoji && notEliminatedEmoji.classList.contains('selected')) {
+            setTimeout(() => {
+                winningMessage();
+            }, 500);
+            
+        } else {
+            setTimeout(() => {
+                losingMessage();
+            }, 500);
+            
+        }
+
     }
 
     if (event.target.classList.contains('selected')) {
-        console.log('selected emoji!');
+        console.log('selected!');
     }
-    if (event.target.classList.contains('eliminate')) {
-        console.log('has eliminate class');
-    }
-}
-
-// get only emoji that doesn't have the class eliminate
-// if last emoji has the class selected and does not have the class eliminated
-// player wins
-// if the last emoji doesn't have the class selected and does not have the eliminated
-// player loses
-function checkLastEmoji() {
-    console.log('figure out winner');
-
-    
-    // if ((!emojiElements.classList.contains('eliminate') && (emojiElements.classList.containst('selected')))) {
-    //     alert('player wins!');
-    // } else {
-    //     alert('player loses');
-    // }
 }
 
 function makeEarlyGuess() {
-    event.target.classList.contains('selected');
-    alert('great job!');
+    emojisElement.addEventListener('click', earlyGuess)
+}
+
+function earlyGuess(event) {
+    if (event.target.classList.contains('selected')) {
+        setTimeout(() => {
+            winningMessage();
+        }, 500);
+        
+    } else {
+        setTimeout(() => {
+            losingMessage();
+        }, 500);
+        
+    }
+}
+
+function winningMessage() {
+    alert('you won!');
+}
+
+function losingMessage() {
+    alert('you lost!');
 }
 
 
