@@ -62,6 +62,7 @@ span:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 20px;
     margin: 20px auto;
     background-color: #5158BB;
     box-shadow: 0 8px 16px 0 #000000;
