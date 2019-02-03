@@ -132,6 +132,7 @@ const emojisElement = document.querySelector('.emojis');
 let selectedEmojiElementIndex;
 // selected emoji object name
 let selectedEmoji;
+
 let selectedEmojiElement;
 let selectedEmojiElementId;
 let notEliminatedEmoji;
@@ -263,14 +264,14 @@ function earlyGuess(event) {
     }
 }
 
-function losingMessage() {
-    loseBox.style.display = 'block';
-    loseMessageEmoji.innerHTML = selectedEmojiElement.innerHTML;
-}
-
 function winningMessage() {
     winBox.style.display = 'block';
     winMessageEmoji.innerHTML = selectedEmojiElement.innerHTML;
+}
+
+function losingMessage() {
+    loseBox.style.display = 'block';
+    loseMessageEmoji.innerHTML = selectedEmojiElement.innerHTML;
 }
 
 function restart() {
