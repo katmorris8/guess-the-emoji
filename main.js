@@ -120,6 +120,7 @@ const emojis = {
         collar: false,
     },
 };
+
 const startScreen = document.querySelector('.start-screen');
 const gameScreen = document.querySelector('.game-screen');
 const startButton = document.querySelector('.start-button');
@@ -129,6 +130,7 @@ const guessButton = document.querySelector('.guess-button');
 const emojiElements = document.querySelectorAll('.emoji');
 const emojisElement = document.querySelector('.emojis');
 let selectedEmojiElementIndex;
+// selected emoji object name
 let selectedEmoji;
 let selectedEmojiElement;
 let selectedEmojiElementId;
@@ -261,14 +263,14 @@ function earlyGuess(event) {
     }
 }
 
-function winningMessage() {
-    winBox.style.display = 'block';
-    winMessageEmoji.innerHTML = selectedEmojiElement.innerHTML;
-}
-
 function losingMessage() {
     loseBox.style.display = 'block';
     loseMessageEmoji.innerHTML = selectedEmojiElement.innerHTML;
+}
+
+function winningMessage() {
+    winBox.style.display = 'block';
+    winMessageEmoji.innerHTML = selectedEmojiElement.innerHTML;
 }
 
 function restart() {
