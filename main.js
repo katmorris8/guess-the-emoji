@@ -152,8 +152,11 @@ const loseBox = document.querySelector('.lose-box');
 
 guessButton.addEventListener('click', makeEarlyGuess);
 const restartButton = document.querySelectorAll('.restart-button');
+const backToHomeMessage = document.querySelector('.speech-bubble');
 
 for (let j = 0; j < restartButton.length; j++) {
+    restartButton[j].addEventListener('mouseover', showSpeechBubble);
+    restartButton[j].addEventListener('mouseout', hideSpeechBubble);
     restartButton[j].addEventListener('click', restart);
 }
 
@@ -246,6 +249,14 @@ function handleEmojiClick(event) {
             }, 500);
         }
     }
+}
+
+function showSpeechBubble() {
+    backToHomeMessage.style.display = 'block';
+}
+
+function hideSpeechBubble() {
+    backToHomeMessage.style.display = 'none';
 }
 
 function makeEarlyGuess() {

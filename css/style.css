@@ -192,6 +192,7 @@ button, select {
 }
 
 .speech-bubble {
+  display: none;
   position: relative;
   border-radius: .4em;
   background-color: #043565;
