@@ -197,6 +197,7 @@ button, select {
   background-color: #043565;
   box-shadow: #02394A 3px 3px 3px;
   bottom: 10px;
+  animation: bounce-up 1s ease-in .5s infinite;
 }
 
 .speech-bubble:after {
@@ -230,6 +231,21 @@ button, select {
     font-size: 60px;
     text-shadow: 3px 3px 6px #02394A;
     margin: 0;
+}
+
+@keyframes bounce-up {
+  0% {
+    position: relative;
+    bottom: 0;
+  }
+  50% {
+    position: relative;
+    bottom: 10px;
+  }
+  100% {
+    position: relative;
+    bottom: 0;
+  }
 }
 
 @keyframes color-change {
