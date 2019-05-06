@@ -200,7 +200,9 @@ button, select {
 .speech-bubble {
   display: none;
   position: relative;
-  border-radius: .4em;
+  margin: 0 auto;
+  width: 70%;
+  border-radius: 10px;
   background-color: #043565;
   box-shadow: #02394A 3px 3px 3px;
   bottom: 10px;
@@ -223,7 +225,8 @@ button, select {
 }
 
 .speech-bubble-message {
-  padding: 15px;
+  padding: 10px;
+  font-size: 12px;
 }
 
 .restart-button {
