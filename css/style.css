@@ -154,9 +154,7 @@ button, select {
 
 .question-mark {
   z-index: 5;
-  color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   padding-bottom: 25px;
 }
 
