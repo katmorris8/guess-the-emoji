@@ -135,15 +135,34 @@ button, select {
     opacity: .3;
 }
 
-.guess-emoji {
+.guess-emoji-contianer {
     text-shadow: 1px 1px 2px #02394A;
 }
 
-.guess-emoji p {
-    font-size: 60px;
-    margin: 0;
+.guess-emoji {
+  position: relative;
+  padding: 50px 0px 50px 0px;
 }
 
+.center {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.question-mark {
+  z-index: 5;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  padding-bottom: 25px;
+}
+
+.emoji-profile {
+  font-size: 60px;
+}
 
 .scoreboard {
     margin-top: 24px;
