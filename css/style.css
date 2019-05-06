@@ -20,6 +20,11 @@ h1 {
     font-weight: 900;
     color: #F26DF9;
     text-shadow: 2px 2px 5px #000000;
+    padding-top: 15px;
+}
+
+h2 {
+  font-size: 24px;
 }
 
 h3 {
@@ -184,6 +189,37 @@ button, select {
     font-size: 40px;
     padding: 15px 30px;
     margin: 10px 5px;
+}
+
+.speech-bubble {
+  position: relative;
+  border-radius: .4em;
+  background-color: #043565;
+  box-shadow: #02394A 3px 3px 3px;
+  bottom: 10px;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #043565;
+	border-bottom: 0;
+	margin-left: -20px;
+  margin-bottom: -20px;
+  filter: drop-shadow( #02394A 3px 3px 3px);
+}
+
+.speech-bubble-message {
+  padding: 15px;
+}
+
+.restart-button {
+  margin-bottom: 60px;
 }
 
 .buttons:hover {
