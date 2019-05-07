@@ -462,7 +462,7 @@ button, select {
     }
   }
   
-  @media only screen and (max-width: 1024px) and (min-width: 800px) {
+  @media only screen and (max-width: 1024px) and (min-width: 861px) {
       h1 {
           font-size: 48px;
       }
@@ -472,7 +472,7 @@ button, select {
       }
   }
 
-  @media only screen and (max-width: 799px) and (min-width: 500px) {
+  @media only screen and (max-width: 860px) and (min-width: 731px) {
     h1 {
         font-size: 32px;
     }
@@ -503,4 +503,37 @@ button, select {
         padding: 15px 30px;
       }
     }
-}
+  }
+
+  @media only screen and (max-width: 730px) and (min-width: 604px) {
+    h1 {
+      font-size: 30px;
+    }
+
+    .start-screen {
+      height: 425px;
+    }
+
+    .start-instructions {
+      font-size: 20px;
+    }
+
+    .emoji-ticker {
+        font-size: 26px;
+    }
+
+    @keyframes grow {
+      0% {
+        font-size: 24px;
+        padding: 15px 30px;
+      }
+      50% {
+        font-size: 34px;
+        padding: 15px 30px;
+      }
+      100% {
+        font-size: 24px;
+        padding: 15px 30px;
+      }
+    }
+  }
