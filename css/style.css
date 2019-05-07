@@ -596,6 +596,7 @@ button, select {
 
     .emoji-ticker {
         font-size: 24px;
+        padding: 30px;
     }
 
     @keyframes grow {
