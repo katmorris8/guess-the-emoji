@@ -537,3 +537,41 @@ button, select {
       }
     }
   }
+
+  @media only screen and (max-width: 603px) and (min-width: 430px) {
+    body {
+      max-width: 90%;
+    }
+    
+    h1 {
+      font-size: 28px;
+    }
+
+    .start-screen {
+      width: 100%;
+      height: 425px;
+    }
+
+    .start-instructions {
+      font-size: 20px;
+    }
+
+    .emoji-ticker {
+        font-size: 26px;
+    }
+
+    @keyframes grow {
+      0% {
+        font-size: 24px;
+        padding: 15px 30px;
+      }
+      50% {
+        font-size: 34px;
+        padding: 15px 30px;
+      }
+      100% {
+        font-size: 24px;
+        padding: 15px 30px;
+      }
+    }
+  }
