@@ -45,6 +45,7 @@ span:hover {
 }
 
 .start-screen {
+    height: 475px;
     font-size: 28px;
     text-shadow: 1px 1px 2px #02394A;
     text-align: center;
@@ -61,6 +62,11 @@ span:hover {
     overflow: hidden;
     /* animation from animista */
     animation: bounce-top 0.9s both;
+}
+
+.start-button {
+  font-size: 40px;
+  animation: grow 2s ease-in infinite;
 }
 
 .game-screen {
@@ -195,12 +201,6 @@ button, select {
   height: 400px;
 }
 
-.start-button {
-    font-size: 40px;
-    padding: 15px 30px;
-    margin: 10px 5px;
-}
-
 .speech-bubble {
   display: none;
   position: relative;
@@ -245,6 +245,21 @@ button, select {
     font-size: 60px;
     text-shadow: 3px 3px 6px #02394A;
     margin: 0;
+}
+
+@keyframes grow {
+  0% {
+    font-size: 40px;
+    padding: 15px 30px;
+  }
+  50% {
+    font-size: 50px;
+    padding: 15px 30px;
+  }
+  100% {
+    font-size: 40px;
+    padding: 15px 30px;
+  }
 }
 
 @keyframes bounce-up {
