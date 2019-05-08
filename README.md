@@ -14,6 +14,6 @@ So, do you think you can guess the right emoji?
 
 Here you go! [Click to play](https://katmorris8.github.io/guess-the-emoji/)
 
-### Technologies Used
+## Technologies Used
 
 This game is *almost* as simple as the original board game. It was built using HTML, CSS and Vanilla JavaScript.
