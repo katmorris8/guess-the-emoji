@@ -636,6 +636,10 @@ button, select {
       width: 95%;
     }
 
+    select {
+      font-size: 18px;
+    }
+
     @keyframes grow {
       0% {
         font-size: 24px;
