@@ -535,7 +535,7 @@ button, select {
     }
   }
 
-  @media only screen and (max-width: 603px) and (min-width: 430px) {
+  @media only screen and (max-width: 603px) and (min-width: 431px) {
     body {
       max-width: 90%;
     }
@@ -573,7 +573,7 @@ button, select {
     }
   }
 
-  @media only screen and (max-width: 429px) and (min-width: 200px) {
+  @media only screen and (max-width: 430px) and (min-width: 200px) {
     body {
       max-width: 90%;
     }
@@ -594,6 +594,28 @@ button, select {
     .emoji-ticker {
         font-size: 24px;
         padding: 30px;
+    }
+
+    .gameboard {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    .line-break {
+      background-color: #043565;
+      width: 95%;
+      height: 1px;
+    }
+
+    .game-info {
+      display: flex;
+      width: 90%;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .guess-emoji-container {
+      display: none;
     }
 
     @keyframes grow {
