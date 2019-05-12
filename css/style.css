@@ -357,325 +357,326 @@ span:hover {
  * ----------------------------------------
  */
 @-webkit-keyframes bounce-top {
-    0% {
-      -webkit-transform: translateY(-45px);
-              transform: translateY(-45px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-      opacity: 1;
-    }
-    24% {
-      opacity: 1;
-    }
-    40% {
-      -webkit-transform: translateY(-24px);
-              transform: translateY(-24px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    65% {
-      -webkit-transform: translateY(-12px);
-              transform: translateY(-12px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    82% {
-      -webkit-transform: translateY(-6px);
-              transform: translateY(-6px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    93% {
-      -webkit-transform: translateY(-4px);
-              transform: translateY(-4px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    25%,
-    55%,
-    75%,
-    87% {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-    100% {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-      opacity: 1;
-    }
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
   }
-  @keyframes bounce-top {
-    0% {
-      -webkit-transform: translateY(-45px);
-              transform: translateY(-45px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-      opacity: 1;
-    }
-    24% {
-      opacity: 1;
-    }
-    40% {
-      -webkit-transform: translateY(-24px);
-              transform: translateY(-24px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    65% {
-      -webkit-transform: translateY(-12px);
-              transform: translateY(-12px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    82% {
-      -webkit-transform: translateY(-6px);
-              transform: translateY(-6px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    93% {
-      -webkit-transform: translateY(-4px);
-              transform: translateY(-4px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    25%,
-    55%,
-    75%,
-    87% {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-    100% {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-      opacity: 1;
-    }
+  24% {
+    opacity: 1;
   }
-  
-  @media only screen and (max-width: 1024px) and (min-width: 861px) {
-      h1 {
-          font-size: 48px;
-      }
+  40% {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
 
-      .emoji-ticker {
-          font-size: 32px;
-      }
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
   }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
 
-  @media only screen and (max-width: 860px) and (min-width: 731px) {
+@media only screen and (max-width: 1024px) and (min-width: 861px) {
     h1 {
+        font-size: 48px;
+    }
+
+    .emoji-ticker {
         font-size: 32px;
     }
+}
 
-    .start-screen {
-      height: 450px;
-    }
-
-    .start-instructions {
-      font-size: 24px;
-    }
-
-    .emoji-ticker {
-        font-size: 26px;
-    }
-
-    @keyframes grow {
-      0% {
-        font-size: 30px;
-        padding: 15px 30px;
-      }
-      50% {
-        font-size: 40px;
-        padding: 15px 30px;
-      }
-      100% {
-        font-size: 30px;
-        padding: 15px 30px;
-      }
-    }
+@media only screen and (max-width: 860px) and (min-width: 731px) {
+  h1 {
+      font-size: 32px;
   }
 
-  @media only screen and (max-width: 730px) and (min-width: 604px) {
-    h1 {
+  .start-screen {
+    height: 450px;
+  }
+
+  .start-instructions {
+    font-size: 24px;
+  }
+
+  .emoji-ticker {
+      font-size: 26px;
+  }
+
+  @keyframes grow {
+    0% {
       font-size: 30px;
+      padding: 15px 30px;
     }
-
-    .start-screen {
-      height: 425px;
-    }
-
-    .start-instructions {
-      font-size: 20px;
-    }
-
-    .emoji-ticker {
-        font-size: 26px;
-    }
-
-    @keyframes grow {
-      0% {
-        font-size: 24px;
-        padding: 15px 30px;
-      }
-      50% {
-        font-size: 34px;
-        padding: 15px 30px;
-      }
-      100% {
-        font-size: 24px;
-        padding: 15px 30px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 603px) and (min-width: 431px) {
-    body {
-      max-width: 90%;
-    }
-    
-    h1 {
-      font-size: 28px;
-    }
-
-    .start-screen {
-      width: 100%;
-      height: 425px;
-    }
-
-    .start-instructions {
-      font-size: 20px;
-    }
-
-    .emoji-ticker {
-        font-size: 26px;
-    }
-
-    @keyframes grow {
-      0% {
-        font-size: 24px;
-        padding: 15px 30px;
-      }
-      50% {
-        font-size: 34px;
-        padding: 15px 30px;
-      }
-      100% {
-        font-size: 24px;
-        padding: 15px 30px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 430px) and (min-width: 200px) {
-    body {
-      max-width: 90%;
-    }
-    
-    h1 {
-      font-size: 24px;
-    }
-
-    h4 {
-      font-size: 80px;
-    }
-
-    .start-screen {
-      width: 100%;
-      height: 500px;
-    }
-
-    .start-instructions {
-      font-size: 18px;
-    }
-
-    .emoji-ticker {
-        font-size: 24px;
-        padding: 30px;
-    }
-
-    .gameboard {
-      flex-direction: column-reverse;
-      align-items: center;
-      padding: 10px;
-    }
-
-    .line-break {
-      background-color: #043565;
-      width: 95%;
-      height: 1px;
-    }
-
-    .game-info {
-      display: flex;
-      width: 90%;
-      align-items: center;
-      justify-content: space-between;
-      padding: 5px;
-    }
-
-    .guess-emoji-container {
-      display: none;
-    }
-
-    .emoji-board {
-      width: 100%;
-      padding: 5px;
-    }
-  
-    .emoji {
-        font-size: 60px;
-        width: 20%;
-        margin: 5px;
-    }
-
-    .questions {
-      width: 95%;
-    }
-
-    .modal-box, .win-box, .lose-box {
-      display: none;
-      width: 80%;
-    }
-
-    .message {
-      font-size: 50px;
-    }
-
-    @keyframes grow {
-      0% {
-        font-size: 24px;
-        padding: 15px 30px;
-      }
-      50% {
-        font-size: 34px;
-        padding: 15px 30px;
-      }
-      100% {
-        font-size: 24px;
-        padding: 15px 30px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 392px) {
-    h4 {
-      font-size: 60px;
-    }
-
-    .win-box {
-      padding: 10px;
-    }
-
-    .message {
+    50% {
       font-size: 40px;
+      padding: 15px 30px;
+    }
+    100% {
+      font-size: 30px;
+      padding: 15px 30px;
     }
   }
+}
+
+@media only screen and (max-width: 730px) and (min-width: 604px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .start-screen {
+    height: 425px;
+  }
+
+  .start-instructions {
+    font-size: 20px;
+  }
+
+  .emoji-ticker {
+      font-size: 26px;
+  }
+
+  @keyframes grow {
+    0% {
+      font-size: 24px;
+      padding: 15px 30px;
+    }
+    50% {
+      font-size: 34px;
+      padding: 15px 30px;
+    }
+    100% {
+      font-size: 24px;
+      padding: 15px 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 603px) and (min-width: 431px) {
+  body {
+    max-width: 90%;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+
+  .start-screen {
+    width: 100%;
+    height: 425px;
+  }
+
+  .start-instructions {
+    font-size: 20px;
+  }
+
+  .emoji-ticker {
+      font-size: 26px;
+  }
+
+  @keyframes grow {
+    0% {
+      font-size: 24px;
+      padding: 15px 30px;
+    }
+    50% {
+      font-size: 34px;
+      padding: 15px 30px;
+    }
+    100% {
+      font-size: 24px;
+      padding: 15px 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 430px) and (min-width: 200px) {
+  body {
+    max-width: 90%;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 80px;
+  }
+
+  .start-screen {
+    width: 100%;
+    height: 500px;
+  }
+
+  .start-instructions {
+    font-size: 18px;
+  }
+
+  .emoji-ticker {
+      font-size: 24px;
+      padding: 30px;
+  }
+
+  .gameboard {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .line-break {
+    background-color: #043565;
+    width: 95%;
+    height: 1px;
+  }
+
+  .game-info {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+  .guess-emoji-container {
+    display: none;
+  }
+
+  .emoji-board {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .emoji {
+      font-size: 60px;
+      width: 20%;
+      margin: 5px;
+  }
+
+  .questions {
+    width: 95%;
+  }
+
+  .modal-box, .win-box, .lose-box {
+    display: none;
+    width: 80%;
+  }
+
+  .message {
+    font-size: 50px;
+  }
+
+  @keyframes grow {
+    0% {
+      font-size: 24px;
+      padding: 15px 30px;
+    }
+    50% {
+      font-size: 34px;
+      padding: 15px 30px;
+    }
+    100% {
+      font-size: 24px;
+      padding: 15px 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 392px) {
+  h4 {
+    font-size: 60px;
+  }
+
+  .win-box {
+    padding: 10px;
+  }
+
+  .message {
+    font-size: 40px;
+  }
+}
