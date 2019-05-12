@@ -88,6 +88,7 @@ span:hover {
     width: 70%;
     padding: 10px;
 }
+
 .emojis {
     display: flex;
     justify-content: space-between;
@@ -599,6 +600,7 @@ button, select {
     .gameboard {
       flex-direction: column-reverse;
       align-items: center;
+      padding: 10px;
     }
 
     .line-break {
@@ -612,10 +614,26 @@ button, select {
       width: 90%;
       align-items: center;
       justify-content: space-between;
+      padding: 5px;
     }
 
     .guess-emoji-container {
       display: none;
+    }
+
+    .emoji-board {
+      width: 100%;
+      padding: 5px;
+  }
+  
+  .emoji {
+      font-size: 60px;
+      width: 20%;
+      margin: 5px;
+  }
+
+    .questions {
+      width: 95%;
     }
 
     @keyframes grow {
