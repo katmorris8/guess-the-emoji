@@ -583,6 +583,10 @@ button, select {
       font-size: 24px;
     }
 
+    h4 {
+      font-size: 80px;
+    }
+
     .start-screen {
       width: 100%;
       height: 500px;
@@ -624,13 +628,13 @@ button, select {
     .emoji-board {
       width: 100%;
       padding: 5px;
-  }
+    }
   
-  .emoji {
-      font-size: 60px;
-      width: 20%;
-      margin: 5px;
-  }
+    .emoji {
+        font-size: 60px;
+        width: 20%;
+        margin: 5px;
+    }
 
     .questions {
       width: 95%;
@@ -638,6 +642,15 @@ button, select {
 
     select {
       font-size: 18px;
+    }
+
+    .modal-box, .win-box, .lose-box {
+      display: none;
+      width: 80%;
+    }
+
+    .message {
+      font-size: 50px;
     }
 
     @keyframes grow {
