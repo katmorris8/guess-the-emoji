@@ -101,6 +101,7 @@ span:hover {
     margin: 5px;
     background-color: transparent;
     border: none;
+    text-align: center;
 }
 
 .emoji:hover {
@@ -118,7 +119,7 @@ span:hover {
     font-size: 20px;
 }
 
-button, select {
+.buttons, .questions {
     cursor: pointer;
     font-size: 24px;
 }
@@ -220,7 +221,7 @@ button, select {
     text-align: center;
 }
 
-.buttons, select {
+.buttons, .questions {
     padding: 5px 15px;
     margin: 10px 5px;
     color: #02394A;
@@ -640,10 +641,6 @@ button, select {
       width: 95%;
     }
 
-    select {
-      font-size: 18px;
-    }
-
     .modal-box, .win-box, .lose-box {
       display: none;
       width: 80%;
@@ -666,5 +663,19 @@ button, select {
         font-size: 24px;
         padding: 15px 30px;
       }
+    }
+  }
+
+  @media only screen and (max-width: 392px) {
+    h4 {
+      font-size: 60px;
+    }
+
+    .win-box {
+      padding: 10px;
+    }
+
+    .message {
+      font-size: 40px;
     }
   }

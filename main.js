@@ -181,6 +181,9 @@ function chooseEmoji() {
     }
     selectedEmojiElementId = Number(selectedEmojiElementIndex);
     selectedEmojiElement = document.getElementById(selectedEmojiElementId);
+    
+    console.log(selectedEmoji);
+    
 }
 
 function getQuestion() {
