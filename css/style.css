@@ -489,6 +489,10 @@ span:hover {
       font-size: 26px;
   }
 
+  .emoji {
+    padding: 0;
+  }
+
   @keyframes grow {
     0% {
       font-size: 30px;
@@ -522,6 +526,10 @@ span:hover {
       font-size: 26px;
   }
 
+  .emoji {
+    padding: 0;
+  }
+
   @keyframes grow {
     0% {
       font-size: 24px;
@@ -545,6 +553,10 @@ span:hover {
   
   h1 {
     font-size: 28px;
+  }
+
+  .emoji {
+    padding: 0;
   }
 
   .start-screen {
@@ -636,6 +648,7 @@ span:hover {
       font-size: 60px;
       width: 20%;
       margin: 5px;
+      padding: 0;
   }
 
   .questions {
@@ -670,6 +683,10 @@ span:hover {
 @media only screen and (max-width: 392px) {
   h4 {
     font-size: 60px;
+  }
+
+  .emoji {
+    padding: 0;
   }
 
   .win-box {
