@@ -470,6 +470,10 @@ span:hover {
     .emoji-ticker {
         font-size: 32px;
     }
+
+    .emoji {
+      padding: 0;
+    }
 }
 
 @media only screen and (max-width: 860px) and (min-width: 731px) {
