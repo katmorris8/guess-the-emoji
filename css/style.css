@@ -1,26 +1,26 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    max-width: 70%;
-    line-height: 1.25;
-    margin: 0 auto;
-    color: #F26DF9;
-    background-color: #5158BB;
-    font-family: 'Cardo', serif;
-    background-image: url("../images/gameboard-bg.jpg");
-    background-size: cover;
+  max-width: 70%;
+  line-height: 1.25;
+  margin: 0 auto;
+  color: #F26DF9;
+  background-color: #5158BB;
+  font-family: 'Cardo', serif;
+  background-image: url("../images/gameboard-bg.jpg");
+  background-size: cover;
 }
 
 h1 {
-    font-size: 54px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    color: #F26DF9;
-    text-shadow: 2px 2px 5px #000000;
-    padding-top: 15px;
+  font-size: 54px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: #F26DF9;
+  text-shadow: 2px 2px 5px #000000;
+  padding-top: 15px;
 }
 
 h2 {
@@ -28,12 +28,12 @@ h2 {
 }
 
 h3 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 h4 {
-    font-size: 100px;
-    margin: 0;
+  font-size: 100px;
+  margin: 0;
 }
 
 button {
@@ -41,27 +41,27 @@ button {
 }
 
 span:hover {
-    animation: .25s move-up linear;
+  animation: .25s move-up linear;
 }
 
 .start-screen {
-    height: 475px;
-    font-size: 28px;
-    text-shadow: 1px 1px 2px #02394A;
-    text-align: center;
-    padding: 20px;
-    margin: 20px auto;
-    background-color: #5158BB;
-    box-shadow: 0 8px 16px 0 #000000;
-    animation: color-change 4s linear infinite alternate-reverse;
+  height: 475px;
+  font-size: 28px;
+  text-shadow: 1px 1px 2px #02394A;
+  text-align: center;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #5158BB;
+  box-shadow: 0 8px 16px 0 #000000;
+  animation: color-change 4s linear infinite alternate-reverse;
 }
 
 .emoji-ticker {
-    font-size: 50px;
-    padding: 40px;
-    overflow: hidden;
-    /* animation from animista */
-    animation: bounce-top 0.9s both;
+  font-size: 50px;
+  padding: 40px;
+  overflow: hidden;
+  /* animation from animista */
+  animation: bounce-top 0.9s both;
 }
 
 .start-button {
@@ -70,94 +70,96 @@ span:hover {
 }
 
 .game-screen {
-    display: none;
+  display: none;
 }
 
 .gameboard {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    padding: 20px;
-    margin: 20px auto;
-    background-color: #5158BB;
-    box-shadow: 0 8px 16px 0 #000000;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #5158BB;
+  box-shadow: 0 8px 16px 0 #000000;
 }
 
 .emoji-board {
-    position: relative;
-    width: 70%;
-    padding: 10px;
+  position: relative;
+  width: 70%;
+  padding: 10px;
 }
 
 .emojis {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .emoji {
-    font-size: 90px;
-    width: 20%;
-    margin: 5px;
-    background-color: transparent;
-    border: none;
-    text-align: center;
-    padding: 0;
+  font-size: 90px;
+  width: 20%;
+  margin: 5px;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  padding: 0;
 }
 
 .emoji:hover {
-    box-shadow: 0 8px 16px 3px #EB4B98;
-    animation: .25s move-button-up linear;
+  box-shadow: 0 8px 16px 3px #EB4B98;
+  animation: .25s move-button-up linear;
 }
 
 .answer {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .game-info {
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
 }
 
 .buttons, .questions {
-    cursor: pointer;
-    font-size: 24px;
+  cursor: pointer;
+  font-size: 24px;
 }
 
 .modal-box, .win-box, .lose-box {
-    display: none;
-    background-color: #043565;
-    border: 3px #F26DF9 solid;
-    width: 40%;
-    position: absolute;
-    text-align: center;
-    height: auto;
-    top: 20%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    padding: 20px;
+  display: none;
+  background-color: #043565;
+  border: 3px #F26DF9 solid;
+  width: 40%;
+  position: absolute;
+  text-align: center;
+  height: auto;
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 20px;
 }
 
 .win-box, .lose-box {
-    /* animation from animista */
-    animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  /* animation from animista */
+  animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
 .continue-button {
-    padding: 10px;
+  padding: 10px;
 }
 
 .eliminate {
-    opacity: .3;
+  opacity: .3;
 }
 
-.speech-bubble {
-  display: none;
+.restart-button:hover::before {
+  content: 'Back to Home';
+  padding: 10px;
+  font-size: 12px;
   position: relative;
   margin: 0 auto;
-  width: 70%;
+  /* width: 70%; */
   border-radius: 10px;
   background-color: #043565;
   box-shadow: #02394A 3px 3px 3px;
@@ -165,7 +167,7 @@ span:hover {
   animation: bounce-up 1s ease-in .5s infinite;
 }
 
-.speech-bubble:after {
+.restart-button:hover::after {
 	content: '';
 	position: absolute;
 	bottom: 10px;
@@ -180,14 +182,14 @@ span:hover {
   filter: drop-shadow( #02394A 3px 3px 3px);
 }
 
-.speech-bubble-message {
+/* .speech-bubble-message {
   padding: 10px;
   font-size: 12px;
-}
+} */
 
 .guess-emoji-container {
-    text-shadow: 1px 1px 2px #02394A;
-    padding-top: 50px;
+  text-shadow: 1px 1px 2px #02394A;
+  padding-top: 50px;
 }
 
 .guess-emoji {
@@ -214,21 +216,21 @@ span:hover {
 }
 
 .scoreboard {
-    margin-top: 24px;
-    text-shadow: 1px 1px 2px #02394A;
+  margin-top: 24px;
+  text-shadow: 1px 1px 2px #02394A;
 }
 
 .ask-section {
-    text-align: center;
+  text-align: center;
 }
 
 .buttons, .questions {
-    padding: 5px 15px;
-    margin: 10px 5px;
-    color: #02394A;
-    background-color: #F26DF9;
-    box-shadow: 0 8px 16px 0 #000000;
-    transition: .5s ease-in .25s;
+  padding: 5px 15px;
+  margin: 10px 5px;
+  color: #02394A;
+  background-color: #F26DF9;
+  box-shadow: 0 8px 16px 0 #000000;
+  transition: .5s ease-in .25s;
 }
 
 .line-break {
@@ -238,13 +240,13 @@ span:hover {
 }
 
 .buttons:hover {
-    background-color: #EB4B98;
+  background-color: #EB4B98;
 }
 
 .message {
-    font-size: 60px;
-    text-shadow: 3px 3px 6px #02394A;
-    margin: 0;
+  font-size: 60px;
+  text-shadow: 3px 3px 6px #02394A;
+  margin: 0;
 }
 
 @keyframes grow {
@@ -278,35 +280,35 @@ span:hover {
 }
 
 @keyframes color-change {
-    0% {
-      background-color: #5158BB;
-    }
-    
-    100% {
-      background-color: #043565;
-    }
+  0% {
+    background-color: #5158BB;
   }
+  
+  100% {
+    background-color: #043565;
+  }
+}
 
 @keyframes move-up {
-      0% {
-          position: relative;
-          bottom: 0;
-      }
-      100% {
-        position: relative;
-        bottom: 30px;
-      }
+  0% {
+    position: relative;
+    bottom: 0;
   }
+  100% {
+    position: relative;
+    bottom: 30px;
+  }
+}
 
 @keyframes move-button-up {
-    0% {
-        position: relative;
-        bottom: 0;
-    }
-    100% {
-      position: relative;
-      bottom: 15px;
-    }
+  0% {
+    position: relative;
+    bottom: 0;
+  }
+  100% {
+    position: relative;
+    bottom: 15px;
+  }
 }
 
    /* ----------------------------------------------
@@ -320,39 +322,39 @@ span:hover {
  * ----------------------------------------
  */
 @-webkit-keyframes puff-in-center {
-    0% {
-      -webkit-transform: scale(2);
-              transform: scale(2);
-      -webkit-filter: blur(2px);
-              filter: blur(2px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    opacity: 0;
   }
-  @keyframes puff-in-center {
-    0% {
-      -webkit-transform: scale(2);
-              transform: scale(2);
-      -webkit-filter: blur(2px);
-              filter: blur(2px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
   }
+}
+@keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
   
-  /**
+/**
  * ----------------------------------------
  * animation bounce-top
  * ----------------------------------------
@@ -360,9 +362,9 @@ span:hover {
 @-webkit-keyframes bounce-top {
   0% {
     -webkit-transform: translateY(-45px);
-            transform: translateY(-45px);
+    transform: translateY(-45px);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
     opacity: 1;
   }
   24% {
@@ -370,42 +372,42 @@ span:hover {
   }
   40% {
     -webkit-transform: translateY(-24px);
-            transform: translateY(-24px);
+    transform: translateY(-24px);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   65% {
     -webkit-transform: translateY(-12px);
-            transform: translateY(-12px);
+    transform: translateY(-12px);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   82% {
     -webkit-transform: translateY(-6px);
-            transform: translateY(-6px);
+    transform: translateY(-6px);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   93% {
     -webkit-transform: translateY(-4px);
-            transform: translateY(-4px);
+    transform: translateY(-4px);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   25%,
   55%,
   75%,
   87% {
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
   100% {
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
     opacity: 1;
   }
 }
@@ -413,9 +415,9 @@ span:hover {
 @keyframes bounce-top {
   0% {
     -webkit-transform: translateY(-45px);
-            transform: translateY(-45px);
+    transform: translateY(-45px);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
     opacity: 1;
   }
   24% {
@@ -423,63 +425,63 @@ span:hover {
   }
   40% {
     -webkit-transform: translateY(-24px);
-            transform: translateY(-24px);
+    transform: translateY(-24px);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   65% {
     -webkit-transform: translateY(-12px);
-            transform: translateY(-12px);
+    transform: translateY(-12px);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   82% {
     -webkit-transform: translateY(-6px);
-            transform: translateY(-6px);
+    transform: translateY(-6px);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   93% {
     -webkit-transform: translateY(-4px);
-            transform: translateY(-4px);
+    transform: translateY(-4px);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   25%,
   55%,
   75%,
   87% {
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
   100% {
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
     opacity: 1;
   }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 861px) {
-    h1 {
-        font-size: 48px;
-    }
+  h1 {
+    font-size: 48px;
+  }
 
-    .emoji-ticker {
-        font-size: 32px;
-    }
+  .emoji-ticker {
+    font-size: 32px;
+  }
 
-    .emoji {
-      padding: 0;
-    }
+  .emoji {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 860px) and (min-width: 731px) {
   h1 {
-      font-size: 32px;
+    font-size: 32px;
   }
 
   .start-screen {
@@ -491,7 +493,7 @@ span:hover {
   }
 
   .emoji-ticker {
-      font-size: 26px;
+    font-size: 26px;
   }
 
   .emoji {
@@ -528,7 +530,7 @@ span:hover {
   }
 
   .emoji-ticker {
-      font-size: 26px;
+    font-size: 26px;
   }
 
   .emoji {
@@ -574,7 +576,7 @@ span:hover {
   }
 
   .emoji-ticker {
-      font-size: 26px;
+    font-size: 26px;
   }
 
   @keyframes grow {
@@ -616,8 +618,8 @@ span:hover {
   }
 
   .emoji-ticker {
-      font-size: 24px;
-      padding: 30px;
+    font-size: 24px;
+    padding: 30px;
   }
 
   .gameboard {
@@ -650,10 +652,10 @@ span:hover {
   }
 
   .emoji {
-      font-size: 60px;
-      width: 20%;
-      margin: 5px;
-      padding: 0;
+    font-size: 60px;
+    width: 20%;
+    margin: 5px;
+    padding: 0;
   }
 
   .questions {
