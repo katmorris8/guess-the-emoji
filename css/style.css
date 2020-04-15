@@ -153,40 +153,6 @@ span:hover {
   opacity: .3;
 }
 
-.restart-button:hover::before {
-  content: 'Back to Home';
-  padding: 10px;
-  font-size: 12px;
-  position: relative;
-  margin: 0 auto;
-  /* width: 70%; */
-  border-radius: 10px;
-  background-color: #043565;
-  box-shadow: #02394A 3px 3px 3px;
-  bottom: 10px;
-  animation: bounce-up 1s ease-in .5s infinite;
-}
-
-.restart-button:hover::after {
-  content: '';
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border: 20px solid transparent;
-  border-top-color: #043565;
-  border-bottom: 0;
-  margin-left: -20px;
-  margin-bottom: -20px;
-  filter: drop-shadow( #02394A 3px 3px 3px);
-}
-
-/* .speech-bubble-message {
-  padding: 10px;
-  font-size: 12px;
-} */
-
 .guess-emoji-container {
   text-shadow: 1px 1px 2px #02394A;
   padding-top: 50px;
