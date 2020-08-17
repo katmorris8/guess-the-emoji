@@ -38,6 +38,7 @@ h4 {
 
 button {
   outline: none;
+  border-radius: 5px;
 }
 
 span:hover {
