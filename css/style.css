@@ -49,6 +49,7 @@ span:hover {
 }
 
 .start-screen {
+  max-width: 1008px;
   height: 500px;
   font-size: 28px;
   text-shadow: 1px 1px 2px #02394A;
@@ -86,6 +87,7 @@ span:hover {
 }
 
 .gameboard {
+  max-width: 1008px;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
