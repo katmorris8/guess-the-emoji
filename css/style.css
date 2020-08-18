@@ -66,9 +66,10 @@ span:hover {
   font-size: 100px;
   margin: 40px 0;
   height: 120px;
-  animation: ticker 6s linear alternate 300ms infinite;
+  /* animation: ticker 6s linear 300ms infinite; */
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
 }
@@ -293,10 +294,10 @@ span:hover {
 
 @keyframes ticker {
   0% {
-    transform: translate(375px);
+    transform: translate(0px);
   }
   100% {
-    transform: translate(-375px);
+    transform: translate(-5000px);
   }
 }
 

@@ -294,7 +294,27 @@ function restart() {
 
 chooseEmoji();
 
+window.onload = emojiMarque();
 
+function emojiMarque() {
+  const emojiList = ['🕵🏻‍♀️', '👨🏿‍🚀', '👩🏻‍🎤', '👨🏼‍🎨', '👩🏼‍⚖️', '🧛🏻‍♂️', '👨🏻‍🚒', '👩🏾‍🔬', '👮🏿‍♂️', '👩🏼‍🌾', '🧕🏽', '👨🏼‍🏫']
+  const emojiTicker = document.querySelector('.emoji-ticker');
+  let i = 0;
+  
+  setInterval(() => {
+    const span = document.createElement('span');
+    if (i > emojiList.length - 1) {
+      i = 0;
+    }
+    span.innerHTML = emojiList[i];
+    emojiTicker.appendChild(span);
+    i++;
+    console.log('working');
+    
+  }, 1000);
+  
+  emojiTicker.style.animation = 'ticker 50s linear 300ms infinite';
+}
 
 
 // if the emojis that don't have the class name eliminated
