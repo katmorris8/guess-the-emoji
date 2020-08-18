@@ -8,7 +8,8 @@ body {
   margin: 0 auto;
   color: #F26DF9;
   background-color: #5158BB;
-  font-family: 'Cardo', serif;
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
   background-image: url("../images/gameboard-bg-opt.jpg");
   background-size: cover;
 }
@@ -39,6 +40,8 @@ h4 {
 button {
   outline: none;
   border-radius: 5px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
 }
 
 span:hover {
@@ -59,10 +62,10 @@ span:hover {
 
 .emoji-ticker {
   font-size: 50px;
-  padding: 40px;
+  padding: 40px 0;
   overflow: hidden;
   /* animation from animista */
-  animation: bounce-top 0.9s both;
+  /* animation: bounce-top 0.9s both; */
 }
 
 .start-button {

@@ -295,6 +295,8 @@ function restart() {
 chooseEmoji();
 
 
+
+
 // if the emojis that don't have the class name eliminated
 // after a question is asked
 // and if they don't qualify for the question
