@@ -155,9 +155,6 @@ const restartButton = document.querySelectorAll('.restart-button');
 const arrowRestartButton = document.querySelector('.restart-button');
 const backToHomeMessage = document.querySelector('.speech-bubble');
 
-arrowRestartButton.addEventListener('mouseover', showSpeechBubble);
-arrowRestartButton.addEventListener('mouseout', hideSpeechBubble);
-
 for (let j = 0; j < restartButton.length; j++) {
   restartButton[j].addEventListener('click', restart);
 }
@@ -296,6 +293,8 @@ function restart() {
 }
 
 chooseEmoji();
+
+
 
 
 // if the emojis that don't have the class name eliminated
