@@ -309,7 +309,6 @@ function emojiMarque() {
     span.innerHTML = emojiList[i];
     emojiTicker.appendChild(span);
     i++;
-    console.log('working');
     
   }, 1000);
   
