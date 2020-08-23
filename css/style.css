@@ -38,12 +38,12 @@ h4 {
   margin: 0;
 }
 
-button {
-  outline: none;
-  border: none;
-  border-radius: .3125rem;
+button, select {
   font-family: Helvetica, sans-serif;
   font-weight: 400;
+  border: none;
+  border-radius: .3125rem;
+  outline: none;
 }
 
 span:hover {
