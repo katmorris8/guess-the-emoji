@@ -120,12 +120,12 @@ span:hover {
 }
 
 .emoji:hover {
-  box-shadow: 0 .5rem 1rem 3px #EB4B98;
+  box-shadow: 0 .5rem 1rem .1875rem #EB4B98;
   animation: .25s move-button-up linear;
 }
 
 .answer {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .game-info {
@@ -136,13 +136,13 @@ span:hover {
 
 .buttons, .questions {
   cursor: pointer;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .modal-box, .win-box, .lose-box {
   display: none;
   background-color: #043565;
-  border: 3px #F26DF9 solid;
+  border: .1875rem #F26DF9 solid;
   width: 40%;
   position: absolute;
   text-align: center;
@@ -169,12 +169,12 @@ span:hover {
 
 .guess-emoji-container {
   text-shadow: .0625rem .0625rem .125rem #02394A;
-  padding-top: 50px;
+  padding-top: 3.125rem;
 }
 
 .guess-emoji {
   position: relative;
-  padding: 70px 0px 60px 0px;
+  padding: 4.375rem 0 3.75rem 0;
 }
 
 .center {
@@ -187,16 +187,16 @@ span:hover {
 
 .question-mark {
   z-index: 5;
-  font-size: 30px;
+  font-size: 1.875rem;
   padding-bottom: 1.5625rem;
 }
 
 .emoji-profile {
-  font-size: 60px;
+  font-size: 3.75rem;
 }
 
 .scoreboard {
-  margin-top: 24px;
+  margin-top: 1.5rem;
   text-shadow: .0625rem .0625rem .125rem #02394A;
 }
 
@@ -205,7 +205,7 @@ span:hover {
 }
 
 .buttons, .questions {
-  padding: .3125rem 15px;
+  padding: .3125rem .9375rem;
   margin: .625rem .3125rem;
   color: #02394A;
   background-color: #F26DF9;
@@ -216,7 +216,7 @@ span:hover {
 .line-break {
   background-color: #043565;
   width: .0625rem;
-  height: 400px;
+  height: 25rem;
 }
 
 .buttons:hover {
@@ -224,23 +224,23 @@ span:hover {
 }
 
 .message {
-  font-size: 60px;
-  text-shadow: 3px 3px 6px #02394A;
+  font-size: 3.75rem;
+  text-shadow: .1875rem .1875rem .375rem #02394A;
   margin: 0;
 }
 
 @keyframes grow {
   0% {
     font-size: 2.5rem;
-    padding: 15px 30px;
+    padding: .9375rem 1.875rem;
   }
   50% {
-    font-size: 50px;
-    padding: 15px 30px;
+    font-size: 3.125rem;
+    padding: .9375rem 1.875rem;
   }
   100% {
     font-size: 2.5rem;
-    padding: 15px 30px;
+    padding: .9375rem 1.875rem;
   }
 }
 
@@ -276,7 +276,7 @@ span:hover {
   }
   100% {
     position: relative;
-    bottom: 30px;
+    bottom: 1.875rem;
   }
 }
 
@@ -287,7 +287,7 @@ span:hover {
   }
   100% {
     position: relative;
-    bottom: 15px;
+    bottom: .9375rem;
   }
 }
 
@@ -343,7 +343,7 @@ span:hover {
   }
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 861px) {
+@media only screen and (max-width: 101.5rem) and (min-width: 861px) {
   h1 {
     font-size: 48px;
   }
