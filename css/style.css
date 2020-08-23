@@ -3,43 +3,44 @@
 }
 
 body {
-  max-width: 70%;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 100;
   line-height: 1.25;
+  max-width: 63rem;
   margin: 0 auto;
   color: #F26DF9;
   background-color: #5158BB;
-  font-family: Helvetica, sans-serif;
-  font-weight: 100;
   background-image: url("../images/gameboard-bg-opt.jpg");
   background-size: cover;
 }
 
 h1 {
-  font-size: 54px;
+  font-size: 3.375rem;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   color: #F26DF9;
-  text-shadow: 2px 2px 5px #000000;
-  padding: 24px 0;
+  text-shadow: .125rem .125rem .3125rem #000000;
+  padding: 1.5rem 0;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 
 h4 {
-  font-size: 100px;
+  font-size: 6.25rem;
   margin: 0;
 }
 
 button {
   outline: none;
-  border-radius: 5px;
+  border-radius: .3125rem;
   font-family: Helvetica, sans-serif;
   font-weight: 400;
 }
@@ -49,37 +50,35 @@ span:hover {
 }
 
 .start-screen {
-  max-width: 1008px;
-  height: 500px;
-  font-size: 28px;
-  text-shadow: 1px 1px 2px #02394A;
+  max-width: 63rem;
+  height: 31.25rem;
+  font-size: 1.75rem;
+  text-shadow: .0625rem .0625rem .125rem #02394A;
   text-align: center;
-  padding: 25px;
+  padding: 1.5625rem;
   margin: 0 auto;
   overflow: hidden;
   background-color: #5158BB;
-  box-shadow: 0 8px 16px 0 #000000;
+  box-shadow: 0 .5rem 1rem 0 #000000;
   animation: color-change 4s linear infinite alternate-reverse;
 }
 
 .emoji-ticker {
-  font-size: 100px;
-  margin: 40px 0;
-  height: 120px;
-  /* animation: ticker 6s linear 300ms infinite; */
+  font-size: 6.25rem;
+  margin: 2.5rem 0;
+  height: 7.5rem;
   display: flex;
-  /* justify-content: space-evenly; */
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
 }
 
 .emoji-ticker > span {
-  padding: 0 20px;
+  padding: 0 1.25rem;
 }
 
 .start-button {
-  font-size: 40px;
+  font-size: 2.5rem;
   animation: grow 2s ease-in infinite;
 }
 
@@ -88,20 +87,20 @@ span:hover {
 }
 
 .gameboard {
-  max-width: 1008px;
+  max-width: 63rem;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  padding: 20px;
-  margin: 20px auto;
+  padding: 1.25rem;
+  margin: 1.25rem auto;
   background-color: #5158BB;
-  box-shadow: 0 8px 16px 0 #000000;
+  box-shadow: 0 .5rem 1rem 0 #000000;
 }
 
 .emoji-board {
   position: relative;
   width: 70%;
-  padding: 10px;
+  padding: .625rem;
 }
 
 .emojis {
@@ -111,9 +110,9 @@ span:hover {
 }
 
 .emoji {
-  font-size: 90px;
+  font-size: 5.625rem;
   width: 20%;
-  margin: 5px;
+  margin: .3125rem;
   background-color: transparent;
   border: none;
   text-align: center;
@@ -121,7 +120,7 @@ span:hover {
 }
 
 .emoji:hover {
-  box-shadow: 0 8px 16px 3px #EB4B98;
+  box-shadow: 0 .5rem 1rem 3px #EB4B98;
   animation: .25s move-button-up linear;
 }
 
@@ -131,8 +130,8 @@ span:hover {
 
 .game-info {
   text-align: center;
-  padding: 10px;
-  font-size: 20px;
+  padding: .625rem;
+  font-size: 1.25rem;
 }
 
 .buttons, .questions {
@@ -152,7 +151,7 @@ span:hover {
   left: 0;
   right: 0;
   margin: auto;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .win-box, .lose-box {
@@ -161,7 +160,7 @@ span:hover {
 }
 
 .continue-button {
-  padding: 10px;
+  padding: .625rem;
 }
 
 .eliminate {
@@ -169,7 +168,7 @@ span:hover {
 }
 
 .guess-emoji-container {
-  text-shadow: 1px 1px 2px #02394A;
+  text-shadow: .0625rem .0625rem .125rem #02394A;
   padding-top: 50px;
 }
 
@@ -189,7 +188,7 @@ span:hover {
 .question-mark {
   z-index: 5;
   font-size: 30px;
-  padding-bottom: 25px;
+  padding-bottom: 1.5625rem;
 }
 
 .emoji-profile {
@@ -198,7 +197,7 @@ span:hover {
 
 .scoreboard {
   margin-top: 24px;
-  text-shadow: 1px 1px 2px #02394A;
+  text-shadow: .0625rem .0625rem .125rem #02394A;
 }
 
 .ask-section {
@@ -206,17 +205,17 @@ span:hover {
 }
 
 .buttons, .questions {
-  padding: 5px 15px;
-  margin: 10px 5px;
+  padding: .3125rem 15px;
+  margin: .625rem .3125rem;
   color: #02394A;
   background-color: #F26DF9;
-  box-shadow: 0 8px 16px 0 #000000;
+  box-shadow: 0 .5rem 1rem 0 #000000;
   transition: .5s ease-in .25s;
 }
 
 .line-break {
   background-color: #043565;
-  width: 1px;
+  width: .0625rem;
   height: 400px;
 }
 
@@ -232,7 +231,7 @@ span:hover {
 
 @keyframes grow {
   0% {
-    font-size: 40px;
+    font-size: 2.5rem;
     padding: 15px 30px;
   }
   50% {
@@ -240,7 +239,7 @@ span:hover {
     padding: 15px 30px;
   }
   100% {
-    font-size: 40px;
+    font-size: 2.5rem;
     padding: 15px 30px;
   }
 }
@@ -252,7 +251,7 @@ span:hover {
   }
   50% {
     position: relative;
-    bottom: 10px;
+    bottom: .625rem;
   }
   100% {
     position: relative;
