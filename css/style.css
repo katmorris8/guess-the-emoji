@@ -40,6 +40,7 @@ h4 {
 
 button {
   outline: none;
+  border: none;
   border-radius: .3125rem;
   font-family: Helvetica, sans-serif;
   font-weight: 400;
@@ -342,8 +343,8 @@ span:hover {
     opacity: 1;
   }
 }
-
-@media only screen and (max-width: 101.5rem) and (min-width: 861px) {
+/* 
+@media only screen and (max-width: 1024px) and (min-width: 861px) {
   h1 {
     font-size: 48px;
   }
@@ -581,4 +582,4 @@ span:hover {
   .message {
     font-size: 40px;
   }
-}
+} */
